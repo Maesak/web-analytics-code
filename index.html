@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Simple Website</title>
-    <script>
+
+<head>
+   <script>
 window.dataLayer = window.dataLayer ||[];
 window.dataLayer.push({
   'event': 'login',
-  'loginMethod' : 'email' 
-  
+  'loginMethod' : 'email' 
+  
 });
-  </head>
- <body>
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MGMT2HM');</script>
+<!-- End Google Tag Manager -->
+    
+    <title>My E-Commerce Site</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+   
+   
+    <div class="hero">
+        <h1>Welcome to My E-Commerce Site</h1>
+        <p>We offer a wide range of products at competitive prices.</p>
+        <a href="products.html" class="btn" onclick="redirectToYoutube()">Shop Now</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 My E-Commerce Site</p> 
+      
 
 
 
@@ -20,5 +50,19 @@ src="https://www.youtube.com/embed/il_t1WVLNxk"&gt;
 
 </iframe>
 
-<body>
+
+         <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGMT2HM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+     </footer>
+
+    <script>
+        function redirectToYoutube() {
+            window.location.href = "https://youtu.be/w8yWXqWQYmU";
+        }
+    </script>
+</body>
 </html>
+       
+   
