@@ -1,68 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-   <script>
-window.dataLayer = window.dataLayer ||[];
-window.dataLayer.push({
-  'event': 'login',
-  'loginMethod' : 'email' 
-  
-});
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W4Q5G53');</script>
-<!-- End Google Tag Manager -->
-    
-    <title>My E-Commerce Site</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Testing the waters - Web Development Sprint</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-            </ul>
-        </nav>
-    </header>
-   
-   
-   
-    <div class="hero">
-        <h1>Welcome to My E-Commerce Site</h1>
-        <p>We offer a wide range of products at competitive prices.</p>
-        <a href="products.html" class="btn" onclick="redirectToYoutube()">Shop Now</a>
-    </div>
-    <footer>
-        <p>&copy; 2023 My E-Commerce Site</p> 
-      
-
-
-
-<iframe height="480" width="500"
-
-src="https://www.youtube.com/embed/il_t1WVLNxk"&gt;
-
-</iframe>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4Q5G53"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-         
-     </footer>
-
-    <script>
-        function redirectToYoutube() {
-            window.location.href = "https://youtu.be/w8yWXqWQYmU";
-        }
-    </script>
+  <!-- Banner section -->
+  <div class="banner">
+    <h1>Change your life, learn to play</h1>
+    <p>Le Wagon brings technical skills to creative people</p>
+    <a href="https://www.lewagon.com/" class="button-blue">Apply now!</a>
+    <br>
+  </div>
+  <!-- Cards section -->
+<div class="cards">
+  <div class="card">
+    <h3>London</h3>
+      <img src="images\london.jpg" alt="London" class="img_size"> 
+  </div>
+  <div class="card">
+    <h3>Paris </h3>
+    <img src="images\paris.jpg" alt ="Paris" class="img_size">
+  </div>
+  <div class="card">
+    <h3>Shanghai</h3>
+    <img src="images\shanghai.jpg" alt="Shanghai" class="img_size">
+  </div>
+</div>
+  <!-- Footer section -->
+<div class="footer">
+  <p>Made by that guy Bri</p>
+</div>
 </body>
 </html>
-       
-   
