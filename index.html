@@ -1,79 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Testing the waters - Web Development Sprint</title>
-
-  <!-- Change these Google fonts with your own choice -->
-  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Banner section -->
-  <div class="banner">
-    <h1>Change your life, learn to play</h1>
-    <p>Le Wagon brings technical skills to creative people</p>
-    <a href="https://www.lewagon.com/" class="button-blue">Apply now!</a>
-    <br>
-  </div>
-  <!-- Cards section -->
-<div class="cards">
-  <div class="card">
-    <h3>London</h3>
-      <img src="1.jpg" alt="London" class="img_size"> 
-  </div>
-  <div class="card">
-    <h3>Paris </h3>
-    <img src="2.jpg" alt ="Paris" class="img_size">
-  </div>
-  <div class="card">
-    <h3>Shanghai</h3>
-    <img src="3.jpg" alt="Shanghai" class="img_size">
-  </div>
-</div>
-  <!-- Footer section -->
-<div class="footer">
-  <p>Made by that guy Bri</p>
-    <div>This is where the purchase form would go</div>
-    <button id="purchase">Purchase</button>
-    <script>
-    document.getElementById("purchase").addEventListener("click", function () {
-        gtag("event", "purchase", {
-                // This purchase event uses a different transaction ID
-                // from the previous purchase event so Analytics
-                // doesn't deduplicate the events.
-                // Learn more: https://support.google.com/analytics/answer/12313109
-                transaction_id: "T_12345_2",
-                value: 25.42,
-                tax: 4.90,
-                shipping: 5.99,
-                currency: "USD",
-                coupon: "SUMMER_SALE",
-                items: [
-                {
-                  item_id: "SKU_12345",
-                  item_name: "Stan and Friends Tee",
-                  affiliation: "Google Merchandise Store",
-                  coupon: "SUMMER_FUN",
-                  discount: 2.22,
-                  index: 0,
-                  item_brand: "Google",
-                  item_category: "Apparel",
-                  item_category2: "Adult",
-                  item_category3: "Shirts",
-                  item_category4: "Crew",
-                  item_category5: "Short sleeve",
-                  item_list_id: "related_products",
-                  item_list_name: "Related Products",
-                  item_variant: "green",
-                  location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-                  price: 9.99,
-                  quantity: 1
-                }]
-          });
-      });
-    </script>
-</div>
-</body>
+<html>
+  <head>
+    <title>My eCommerce Website</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Header Styles */
+      header {
+        background-color: #fff;
+        height: 60px;
+        padding: 10px 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      header nav {
+        float: right;
+        margin-top: 10px;
+      }
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      header nav li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      header nav li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      /* Login and Signup Styles */
+      .form-container {
+        margin: 20px auto;
+        max-width: 500px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      form input[type="text"],
+      form input[type="password"],
+      form input[type="email"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      form input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      form input[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>My eCommerce Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Login Form -->
+    <div class="form-container">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    
+    <!-- Signup Form -->
+    <div class="form-container">
+      <h2>Signup</h2>
+      <form>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+      </form>
+    </div>
+     <div class="form-container">
+      <h2>Signup</h2>
+      <form>
+        <button id="purchase">Purchase</button>
+      </form>
+    </div>
+  </body>
 </html>
+
+
