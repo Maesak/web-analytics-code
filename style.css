@@ -20,6 +20,7 @@
     color: white;
 }
 
+
 .feature-holder {
     text-align: center;
     margin-bottom: 25px;
@@ -122,7 +123,7 @@ section.online-courses,
     font-size: 14px;
 }
 
-#review-slider-content li .card .card-text {
+ #review-slider-content li .card .card-text {
     font-size: 14px;
 }
 
